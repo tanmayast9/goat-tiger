@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #120b07;
+    color: #f4ead5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tactile dark rosewood surface texture fallback & base */
+.wood-surface {
+  background-color: #26160e;
+  background-image:
+    radial-gradient(ellipse at 50% 30%, rgba(217, 155, 38, 0.08) 0%, transparent 65%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(15, 8, 4, 0.14) 0px,
+      rgba(15, 8, 4, 0.14) 2px,
+      transparent 2px,
+      transparent 9px,
+      rgba(68, 38, 20, 0.12) 9px,
+      rgba(68, 38, 20, 0.12) 13px
+    ),
+    linear-gradient(180deg, #2d1a11 0%, #1d100a 100%);
+}
+
+@keyframes pulseRing {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.14);
+    opacity: 0.45;
+  }
+}
+
+.animate-valid-ring {
+  animation: pulseRing 1.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-valid-ring {
+    animation: none;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}

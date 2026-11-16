@@ -1,0 +1,6 @@
+{
+  "name": "Aadu Puli Aattam — Tiger and Goat",
+  "description": "Traditional Indian Tiger and Goat (Aadu Puli Aattam) strategy board game with local multiplayer and three AI difficulty levels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
