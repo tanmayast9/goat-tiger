@@ -5,14 +5,13 @@ A traditional Indian strategy board game where Tigers hunt Goats and Goats work 
 ## 🎮 Live Demo
 
 <p align="center">
-  <a href="
-goat-tiger.vercel.app">
+  <a href="https://goat-tiger.vercel.app/">
     <img src="https://img.shields.io/badge/▶%20PLAY%20GAME-Live%20Demo-gold?style=for-the-badge" alt="Play Live Demo">
   </a>
 </p>
 
 **[Click here to play Tiger & Goat](
-goat-tiger.vercel.app)**
+https://goat-tiger.vercel.app/)**
 
 ---
 
