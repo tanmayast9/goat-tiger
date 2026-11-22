@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { soundFx } from './audio/soundFx.ts';
 import { GameWorkspace } from './components/GameWorkspace.tsx';
 import { RulesModal } from './components/RulesModal.tsx';
@@ -60,6 +61,7 @@ export default function App() {
       )}
 
       <RulesModal isOpen={rulesOpen} onClose={() => setRulesOpen(false)} />
+      <Analytics />
     </>
   );
 }
